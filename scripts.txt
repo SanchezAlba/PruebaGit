@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Arrays : MonoBehaviour
+{
+    public int[] arrayNumeros;
+    private int numero = 0;
+    // Start is called before the first frame update
+    void Start()
+    {
+
+        //veces que se repite el numero 6
+        if (numero == 6)
+        {
+            Debug.Log("Valor de numero =" + numero);
+            numero = numero + 1;
+        }
+
+        for (int i = 0; i == 6; i++)
+        {
+            Debug.Log("contiene en la posicion" + i + "el valor" + arrayNumeros[i]);
+            numero = numero + arrayNumeros[i];
+            
+        }
+            Debug.Log(numero);
+
+        // se vea el mayor numero
+
+        if (numero > 50)
+        {
+            Debug.Log("mayor numero");
+        }
+            
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
